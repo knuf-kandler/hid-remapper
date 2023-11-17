@@ -437,6 +437,8 @@ const our_descriptor_def_t our_descriptors[] = {
     {
         .descriptor = our_report_descriptor_ps4,
         .descriptor_length = sizeof(our_report_descriptor_ps4),
+        .vid = 0x054C,
+        .pid = 0x05C4,
         .device_connected = ps4_device_connected,
         .device_disconnected = ps4_device_disconnected,
         .main_loop_task = ps4_main_loop_task,
